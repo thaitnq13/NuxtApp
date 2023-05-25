@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+    overflow: auto;
+    width: 100vw;
+    max-width: none !important;
+}
