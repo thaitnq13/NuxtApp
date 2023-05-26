@@ -5,6 +5,7 @@
                 <ul class="flex gap-x-1 text-xl font-bold text-white">
                     <li class="p-2.5 border-r-2"><NuxtLink to="/">Home</NuxtLink></li>
                     <li class="p-2.5 border-r-2"><NuxtLink to="/joke">Joke</NuxtLink></li>
+                    <li class="p-2.5 border-r-2"><NuxtLink to="/meme">Meme</NuxtLink></li>
                     <li class="p-2.5 border-r-2"><NuxtLink to="/universities">Universities</NuxtLink></li>
                     <li class="p-2.5 border-r-2"><NuxtLink to="/about">About</NuxtLink></li>
                 </ul>

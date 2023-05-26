@@ -41,7 +41,7 @@ import { ResponseModel, UniversityModel } from '~/model/common';
 let country: Ref<string> = ref('China');
 let pending: boolean = true;
 let dataRender: Ref<{ data: UniversityModel[] }> = ref({ data: [] });
-const { data: resCountry } = await useFetch(() => 'https://api.first.org/data/v1/countries');
+const { data: resCountry } = await useLazyFetch(() => 'https://api.first.org/data/v1/countries');
 const res = resCountry.value as ResponseModel;
 
 let countrySelect: string[] = [];
