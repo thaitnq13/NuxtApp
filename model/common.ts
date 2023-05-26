@@ -5,3 +5,11 @@ export interface UniversityModel {
     domains: Array<string>;
     web_pages: Array<string>;
 }
+
+export interface ResponseModel {
+    status: string;
+    status_code: number;
+    version: string;
+    access: string;
+    data: any;
+}

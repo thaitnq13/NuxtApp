@@ -10,7 +10,17 @@ function refreshPage() {
 
 <template>
     <div v-if="pending">Loading ...</div>
-    <div v-else>get content</div>
+    <div v-else>
+        <v-card class="content-card">
+            <v-card-title></v-card-title>
+            <v-card-text>
+                <v-text-field></v-text-field>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn> </v-btn>
+            </v-card-actions>
+        </v-card>
+    </div>
 </template>
 
 <style scoped></style>
