@@ -9,7 +9,17 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'text-header': '#94A3B8',
+        'text-header-active': '#67C2C3',
+        'bg-header': '#1E293B'
+      },
+      fontFamily: {
+        'header': ['Mulish'],
+        'base': ['Inter']
+      }
+    },
   },
   plugins: [],
 }
