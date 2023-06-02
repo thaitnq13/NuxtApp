@@ -1,11 +1,12 @@
 <template>
-    <div class="flex flex-col w-full h-screen">
+    <div class="relative">
+        <header class="sticky top-0 z-20 w-full h-[88px] bg-bg-header font-header">
+            <Header></Header>
+        </header>
         <main class="flex-grow w-full h-full max-w-7xl">
-            <header class="w-full h-[88px] bg-bg-header font-header">
-                <Header></Header>
-            </header>
             <slot></slot>
-            <footer class="flex items-center justify-center w-full text-black bg-bg-header font-base">
+            <ScrollToTop />
+            <footer class="flex items-center justify-center w-full background-footer text-black font-base">
                 <Footer></Footer>
             </footer>
         </main>
@@ -15,3 +16,9 @@
 <script setup lang="ts">
 const route = useRouter();
 </script>
+
+<style lang="scss" scoped>
+.background-footer {
+    background-image: url('/img/background-footer.png');
+}
+</style>

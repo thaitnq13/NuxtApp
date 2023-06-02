@@ -6,7 +6,7 @@
             <li class="p-2.5"><NuxtLink to="/joke">Hot job</NuxtLink></li>
             <li class="p-2.5"><NuxtLink to="/meme">Danh sách việc làm</NuxtLink></li>
             <li class="p-2.5"><NuxtLink to="/universities">Ứng tuyển</NuxtLink></li>
-            <li class="p-2.5"><NuxtLink to="/universities">Quy trình</NuxtLink></li>
+            <li class="p-2.5"><NuxtLink to="/testcase">Quy trình</NuxtLink></li>
             <li class="p-2.5"><NuxtLink to="/about">Tin tức</NuxtLink></li>
             <li class="p-2.5"><NuxtLink to="/about">Liên hệ</NuxtLink></li>
         </ul>
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-    
+
 </script>
 
 <style lang="scss" scoped></style>

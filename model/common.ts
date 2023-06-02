@@ -13,3 +13,12 @@ export interface ResponseModel {
     access: string;
     data: any;
 }
+
+export interface JobCardModel {
+    title: string;
+    image: string;
+    salary: string;
+    date: string;
+    phone: string;
+    province: Array<string>;
+}
