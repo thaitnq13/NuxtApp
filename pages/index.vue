@@ -61,17 +61,66 @@ const JOB_CARD = [
         <SwiperLandingPage />
         <div class="absolute z-10 top-full left-1/2 transform-50 w-11/12"><SearchBar /></div>
     </div>
-    <div class="mt-36">
+    <div class="mt-36 mb-[100px]">
         <div class="text-center text-3xl font-bold">Nổi bật trong tháng</div>
         <div class="text-center text-[#475569] text-[14px] mt-3 mb-14">
             Tiếp tục duy trì vị trí hàng đầu trong ngành công nghiệp nước giải khát
         </div>
         <div class="flex justify-center"><JobCardSwiper :job_card="JOB_CARD" /></div>
     </div>
+    <div class="mb-[100px] px-[135px] py-[100px] bg-[#F8FAFC]">
+        <div class="text-center text-3xl font-bold">Các vị trí đang tuyển dụng</div>
+        <div class="text-center text-[#475569] text-[14px] mt-3 mb-14">
+            Tiếp tục duy trì vị trí hàng đầu trong ngành công nghiệp nước giải khát.
+        </div>
+        <div class="flex flex-col gap-4">
+            <template v-for="(item, index) in JOB_CARD">
+                <JobNewsItem
+                    :title="item.title"
+                    :image="item.image"
+                    :salary="item.salary"
+                    :phone="item.phone"
+                    :date="item.date"
+                    :province="item.province"
+                />
+            </template>
+        </div>
+        <div class="flex justify-center mt-10">
+            <v-btn class="text-white bg-[#F98620]" size="x-large" append-icon="mdi-arrow-right" :rounded="'rounded-lg'"
+                >Xem tất cả</v-btn
+            >
+        </div>
+    </div>
+    <div class="px-[135px] py-[100px] bg-[#F8FAFC]">
+        <div class="text-center text-3xl font-bold">Quy trình tuyển dụng</div>
+        <div class="text-center text-[#475569] text-[14px] mt-3 mb-14">
+            Tiếp tục duy trì vị trí hàng đầu trong ngành công nghiệp nước giải khát.
+        </div>
+        <div class="flex flex-col gap-4">
+            <template v-for="(item, index) in JOB_CARD">
+                <JobNewsItem
+                    :title="item.title"
+                    :image="item.image"
+                    :salary="item.salary"
+                    :phone="item.phone"
+                    :date="item.date"
+                    :province="item.province"
+                />
+            </template>
+        </div>
+        <div class="flex justify-center mt-10">
+            <v-btn class="text-white bg-[#F98620]" size="x-large" append-icon="mdi-arrow-right" :rounded="'rounded-lg'"
+                >Xem tất cả</v-btn
+            >
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 .transform-50 {
     transform: translate(-50%, -50%);
+}
+.v-btn {
+    background-color: #f98620;
 }
 </style>

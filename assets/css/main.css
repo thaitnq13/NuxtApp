@@ -14,3 +14,12 @@ main {
     border-radius: 6px;
     padding: 4px 12px;
 }
+
+.frame-item {
+    background: #fff;
+    border: 1px solid #67c2c3;
+    border-radius: 6px;
+}
+.v-btn {
+    text-transform: unset !important;
+}
